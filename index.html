@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GameHost/title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap');
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f3f3f3;
+    margin: 0;
+    padding: 20px;
+    color: #202020;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0078d7;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow:
+      0 0 5px rgba(0,0,0,0.1),
+      0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card:hover {
+    box-shadow:
+      0 0 10px rgba(0,120,215,0.7),
+      0 8px 16px rgba(0,120,215,0.4);
+  }
+
+  .card h2 {
+    color: #0078d7;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+
+  .card p {
+    line-height: 1.5;
+    font-size: 14px;
+    flex-grow: 1;
+  }
+
+  .placeholder {
+    background: #e1e1e1;
+    height: 150px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+
+  .download-btn {
+    margin-top: 15px;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,120,215,0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+
+  .download-btn:hover {
+    background-color: #005a9e;
+    box-shadow: 0 4px 10px rgba(0,90,158,0.7);
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Наши игры</h1>
+
+<div class="container">
+
+  <div class="card">
+    <div class="placeholder" style="background: linear-gradient(135deg, #0078d7, #00bcf2);"></div>
+    <h2>EtF (Escape The Factory)</h2>
+    <p>Игра про робота, которого хотят сжечь после выхода новых моделей. Ему нужно сбежать с завода и избежать участи быть мертвым.</p>
+    <a href="https://drive.google.com/uc?export=download&id=1GaNITVNRX0Du3jAJivuBcjtslK9lsT4B" class="download-btn" target="_blank" rel="noopener noreferrer">Скачать</a>
+  </div>
+
+  <div class="card">
+    <div class="placeholder"></div>
+    <h2>Заглушка 2</h2>
+    <p>Описание для второй игры пока недоступно. Следите за обновлениями!</p>
+    <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID2" class="download-btn" target="_blank" rel="noopener noreferrer">Скачать</a>
+  </div>
+
+  <div class="card">
+    <div class="placeholder"></div>
+    <h2>Заглушка 3</h2>
+    <p>Описание для третьей игры пока недоступно. Скоро мы расскажем больше.</p>
+    <a href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID3" class="download-btn" target="_blank" rel="noopener noreferrer">Скачать</a>
+  </div>
+
+</div>
+
+</body>
+</html>
